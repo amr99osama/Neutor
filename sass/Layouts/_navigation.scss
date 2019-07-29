@@ -18,7 +18,7 @@
         top: 6rem;
         text-align: center;
         right: 6rem;
-        z-index: 200;
+        z-index: 1999999;
 
         @include Responsive(Tablet-Portait)
         {
@@ -36,7 +36,7 @@
         position: fixed;
         top:6.5rem;
         right: 6.5rem;
-        z-index: 1000;
+        z-index: 999;
         transition: all 0.5s ease-in-out;
         @include Responsive(Tablet-Portait)
         {
@@ -52,7 +52,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 150;
+        z-index: 199999;
         transition: all 0.5s ease-in-out;
 
     }

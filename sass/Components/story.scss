@@ -59,6 +59,11 @@
             transform: translateX(-4rem) scale(1.2);
             transition: all 0.3s;
             backface-visibility: hidden;
+
+            @include Responsive (Phone)
+            {
+                width: 100%;
+            }
         }
 
         &__caption

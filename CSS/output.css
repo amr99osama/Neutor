@@ -615,6 +615,9 @@ body {
     transform: translateX(-4rem) scale(1.2);
     transition: all 0.3s;
     backface-visibility: hidden; }
+    @media only Screen and (max-width: 37.5em), only Screen and (hover: none) {
+      .story__img {
+        width: 100%; } }
   .story__caption {
     position: absolute;
     top: 50%;
@@ -941,7 +944,7 @@ body {
   top: 6rem;
   text-align: center;
   right: 6rem;
-  z-index: 200; }
+  z-index: 1999999; }
   @media only Screen and (max-width: 56.25em), only Screen and (hover: none) {
     .navigation__toggle {
       top: 3rem;
@@ -955,7 +958,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  z-index: 1000;
+  z-index: 999;
   transition: all 0.5s ease-in-out; }
   @media only Screen and (max-width: 56.25em), only Screen and (hover: none) {
     .navigation__background {
@@ -969,7 +972,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 150;
+  z-index: 199999;
   transition: all 0.5s ease-in-out; }
 
 .navigation__list {
