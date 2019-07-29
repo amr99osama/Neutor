@@ -1,0 +1,43 @@
+
+
+.features-box
+{
+    background-color:rgba(255,255,255,0.8);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.4);
+            box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.4);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    transition: -webkit-transform 0.2s ease-in-out;
+    -o-transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    
+    &__icon
+    {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        background-image: -webkit-gradient(linear, left top, right top, from(rgba($LightGreen,0.8)), to(rgba($DarkGreen, 0.8)));
+        background-image: -webkit-linear-gradient(left, rgba($LightGreen,0.8), rgba($DarkGreen, 0.8));
+        background-image: -o-linear-gradient(left, rgba($LightGreen,0.8), rgba($DarkGreen, 0.8));
+        background-image: linear-gradient(to right, rgba($LightGreen,0.8), rgba($DarkGreen, 0.8));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:hover
+    {
+        -webkit-transform: translateY(-1.5rem) scale(1.07);
+            -ms-transform: translateY(-1.5rem) scale(1.07);
+                transform: translateY(-1.5rem) scale(1.07);
+    }
+
+}
+
+.features-box h3 
+{
+    font-size: 1.8rem;
+}

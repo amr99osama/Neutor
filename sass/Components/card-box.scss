@@ -1,0 +1,279 @@
+
+.card
+{
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &__side
+    {
+           width: 100%;
+           -webkit-transition: all 0.8s ease-in-out;
+           -o-transition: all 0.8s ease-in-out;
+           transition: all 0.8s ease-in-out;
+            height: 50rem;
+            font-size: 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+            -webkit-box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.2);
+                    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.2);
+            border-radius: 0.5rem;
+            overflow: hidden;
+
+
+        
+            &--front
+            {
+                background-color: white;
+
+            }
+            &--back
+            {
+                -webkit-transform: rotateY(-180deg);
+                        transform: rotateY(-180deg);
+                &-1
+                {
+                    background-image: -webkit-gradient(linear , left top, right bottom , from($LightOrange) , to($DarkOrange));
+                    background-image: -webkit-linear-gradient(left top , $LightOrange , $DarkOrange);
+                    background-image: -o-linear-gradient(left top , $LightOrange , $DarkOrange);
+                    background-image: linear-gradient(to right bottom , $LightOrange , $DarkOrange);
+                }
+                &-2
+                {
+                    background-image: -webkit-gradient(linear , left top, right bottom , from($LightBlue) , to($DarkBlue));
+                    background-image: -webkit-linear-gradient(left top , $LightBlue , $DarkBlue);
+                    background-image: -o-linear-gradient(left top , $LightBlue , $DarkBlue);
+                    background-image: linear-gradient(to right bottom , $LightBlue , $DarkBlue);
+                }
+                &-3
+                {
+                    background-image: -webkit-gradient(linear , left top, right bottom , from($LightGreen) , to($DarkGreen));
+                    background-image: -webkit-linear-gradient(left top , $LightGreen , $DarkGreen);
+                    background-image: -o-linear-gradient(left top , $LightGreen , $DarkGreen);
+                    background-image: linear-gradient(to right bottom , $LightGreen , $DarkGreen);
+                }
+            }
+
+    }
+
+    &:hover &__side--front
+    {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+    }
+    &:hover &__side--back
+    {
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+    }
+
+
+    //Actual Data//
+
+    &__image
+    {
+        height: 20rem;
+        background-size: cover;
+        background-blend-mode: screen;
+        -webkit-background-blend-mode: screen;
+         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%, 0 100%);
+                 clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%, 0 100%);
+
+        &--1
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from($LightOrange) , to($DarkOrange)) ,url(../img/nat-5.jpg);
+            background-image: -webkit-linear-gradient(left top , $LightOrange , $DarkOrange) ,url(../img/nat-5.jpg);
+            background-image: -o-linear-gradient(left top , $LightOrange , $DarkOrange) ,url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom , $LightOrange , $DarkOrange) ,url(../img/nat-5.jpg); 
+        }
+
+        &--2
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from($LightBlue) , to($DarkBlue)) ,url(../img/nat-6.jpg);
+            background-image: -webkit-linear-gradient(left top , $LightBlue , $DarkBlue) ,url(../img/nat-6.jpg);
+            background-image: -o-linear-gradient(left top , $LightBlue , $DarkBlue) ,url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom , $LightBlue , $DarkBlue) ,url(../img/nat-6.jpg); 
+
+        }
+
+        &--3 
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from($LightGreen) , to($DarkGreen)) ,url(../img/nat-7.jpg);
+            background-image: -webkit-linear-gradient(left top , $LightGreen , $DarkGreen) ,url(../img/nat-7.jpg);
+            background-image: -o-linear-gradient(left top , $LightGreen , $DarkGreen) ,url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom , $LightGreen , $DarkGreen) ,url(../img/nat-7.jpg); 
+
+        }
+
+        
+    }
+
+    &__heading
+    {
+        font-size: 2.6rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 10rem;
+        right:2rem;
+        color: white;
+        text-align: right;
+        width: 70%;
+        font-weight: 300;
+        &-span
+    {
+        padding: 1rem 1rem;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+
+        &--1
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from(rgba($LightOrange,0.8)) , to(rgba($DarkOrange,0.8)));
+            background-image: -webkit-linear-gradient(left top , rgba($LightOrange,0.8) , rgba($DarkOrange,0.8));
+            background-image: -o-linear-gradient(left top , rgba($LightOrange,0.8) , rgba($DarkOrange,0.8));
+            background-image: linear-gradient(to right bottom , rgba($LightOrange,0.8) , rgba($DarkOrange,0.8)); 
+        }
+        &--2
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from(rgba($LightBlue,0.8)) , to(rgba($DarkBlue,0.8)));
+            background-image: -webkit-linear-gradient(left top , rgba($LightBlue,0.8) , rgba($DarkBlue,0.8));
+            background-image: -o-linear-gradient(left top , rgba($LightBlue,0.8) , rgba($DarkBlue,0.8));
+            background-image: linear-gradient(to right bottom , rgba($LightBlue,0.8) , rgba($DarkBlue,0.8)); 
+        }
+        &--3
+        {
+            background-image: -webkit-gradient(linear , left top, right bottom , from(rgba($LightGreen,0.8)) , to(rgba($DarkGreen,0.8)));
+            background-image: -webkit-linear-gradient(left top , rgba($LightGreen,0.8) , rgba($DarkGreen,0.8));
+            background-image: -o-linear-gradient(left top , rgba($LightGreen,0.8) , rgba($DarkGreen,0.8));
+            background-image: linear-gradient(to right bottom , rgba($LightGreen,0.8) , rgba($DarkGreen,0.8)); 
+   
+        }
+        
+
+    }
+
+    }
+
+
+    &__details
+    {
+        padding: 1.5rem 3rem;
+        ul{
+
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        li
+        {
+            text-align: center;
+            font-size: $defaultFont;
+            padding: 1rem;
+
+            &:not(:last-child)
+            {
+              border-bottom: 0.1rem solid #eee;
+            }
+        }
+
+    }
+
+ &__info
+ {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1rem;
+ }
+
+ &__price__box
+ {
+  text-align: center;
+  margin-bottom: 6rem;
+  color: white;
+ }
+
+ &__price__prop
+ {
+     font-size: 1.4rem;
+     text-transform: uppercase;
+     color: white;
+ }
+
+ &__price__value
+ {
+     font-size: 6rem;
+     font-weight: 100;
+ }
+
+
+
+ @include Responsive(Tablet-Portait)
+            {
+                height: auto;
+                border-radius: 0.5rem;
+                background-color: white !important;
+                -webkit-box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.2);
+                        box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.2);
+                &__side
+                {
+                       width: 100%;
+                       -webkit-transition: all 0.8s ease-in-out;
+                       -o-transition: all 0.8s ease-in-out;
+                       transition: all 0.8s ease-in-out;
+                        height: auto;
+                        font-size: 2rem;
+                        position: relative;
+                    
+                        &--back
+                        {
+                            -webkit-transform: rotateY(0deg);
+                                    transform: rotateY(0deg);
+                            -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 100% , 0 100%);
+                                    clip-path: polygon(0% 15%, 100% 0%, 100% 100% , 0 100%);
+                            margin-top: -7rem;
+                        }
+            
+                }
+            
+                &:hover &__side--front
+                {
+                    -webkit-transform: rotateY(0deg);
+                            transform: rotateY(0deg);
+                }
+                
+            
+            
+                //Actual Data//
+            
+            
+             &__info
+             {
+                position: relative;
+                top: 0%;
+                left: 0%;
+                -webkit-transform: translate(0);
+                    -ms-transform: translate(0);
+                        transform: translate(0);
+                text-align: center;
+                font-size: 1rem;
+                padding: 7rem 3rem 3rem 3rem;
+             }
+            
+             &__details
+             {
+                 padding: 4rem 3rem 7rem 3rem;
+             }
+            }
+    
+}

@@ -1,0 +1,88 @@
+
+// For General Font 
+body
+{
+    font-family: 'Lato', sans-serif;
+    color: $DarkGrey;
+    @include Responsive (Phone)
+    {
+        overflow-x: hidden;
+    }
+}
+
+// heading
+.heading-content-main {
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+
+    @include Responsive(Phone)
+    {
+        font-size: 3.5rem;
+        letter-spacing: 1rem;
+    }
+}
+
+.heading-content-sub {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    @include Responsive(Phone)
+    {
+        letter-spacing: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 100;
+    
+    }
+}
+
+.heading-secondary
+{
+    font-size: 3.3rem;
+    display: inline-block;
+    font-weight: 600;
+    background-image: -webkit-gradient(linear ,left top, right top ,from($LightGreen) ,to($DarkGreen));
+    background-image: -webkit-linear-gradient(left ,$LightGreen ,$DarkGreen);
+    background-image: -o-linear-gradient(left ,$LightGreen ,$DarkGreen);
+    background-image: linear-gradient(to right ,$LightGreen ,$DarkGreen);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    @include Responsive(Tablet-Portait)
+    {
+        font-size: 3rem;
+    }
+    @include Responsive(Phone)
+    {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+&:hover
+{
+    -webkit-transform: skewX(8deg) skewY(2deg);
+        -ms-transform: skewX(8deg) skewY(2deg);
+            transform: skewX(8deg) skewY(2deg);
+    text-shadow: 0.8rem 0.8rem 1rem rgba(0,0,0,0.2); 
+}
+
+}
+
+.heading-three
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.paragraph
+{
+    font-size: $defaultFont;
+&:not(:last-child)
+{
+    margin-bottom: 3rem;
+}
+}

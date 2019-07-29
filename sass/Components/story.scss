@@ -1,0 +1,101 @@
+
+.story
+{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.4);
+    padding: 6rem;
+    padding-left: 9rem;
+    border-radius: 0.5rem;
+    font-size: $defaultFont;
+    transform: skewX(-12deg);
+    background-color: rgba(white,0.6);
+
+    @include Responsive (Tablet-Portait)
+    {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 6rem;
+
+    }
+    @include Responsive (Phone)
+    {
+        width: 100%;
+        transform: skewX(0deg);
+    }
+
+
+    & > *
+    {
+        transform: skewX(12deg);
+        
+    @include Responsive (Tablet-Portait)
+    {
+    }
+
+
+    }
+
+    &__shape
+    {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        transform:translateX(-3rem) skewX(12deg);
+        position: relative;
+        @include Responsive (Phone)
+        {
+            transform:translateX(-3rem) skewX(0);
+   
+        }
+
+    }
+    &__img
+        {
+            height: 100%;
+            width: auto;
+            transform: translateX(-4rem) scale(1.2);
+            transition: all 0.3s;
+            backface-visibility: hidden;
+        }
+
+        &__caption
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,35%);
+            font-size: $defaultFont;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            opacity: 0;
+            backface-visibility: hidden;
+        }
+    
+    
+        &:hover &__caption
+    {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+        backface-visibility: hidden;
+    }
+
+    &:hover &__img
+    {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(0.4rem) brightness(90%);
+    }
+    &__description
+    {
+        @include Responsive (Phone)
+        {
+            transform:translateX(3rem) skewX(0);
+   
+        }
+    }
+
+}

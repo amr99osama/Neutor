@@ -1,0 +1,30 @@
+
+.centering-text
+{
+    text-align: center;
+}
+
+.m-80
+{
+    margin-bottom: 8rem;
+}
+
+.m-20
+{
+ margin-bottom: 2rem;
+ @include Responsive(Tablet-Portait)
+ {
+     margin-bottom: 1.5rem;
+ }
+}
+
+.mt-20
+{
+    margin-top: 2rem;
+
+    @include Responsive(Tablet-Portait)
+    {
+        margin-top: 1.5rem;
+    }
+
+}

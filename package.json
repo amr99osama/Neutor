@@ -1,0 +1,26 @@
+{
+  "name": "neutor",
+  "version": "1.0.0",
+  "description": "Landing Responsive Page",
+  "main": "index.js",
+  "scripts": {
+    "Watch-sass": "node-sass sass/main.scss CSS/styles.css -w",
+    "devserver":"live-server",
+    "start":"npm-run-all --parallel devserver Watch-sass",
+    "compile-sass": "node-sass sass/main.scss CSS/styles.comp.css",
+    "concat-sass": "concat -o CSS/output.css CSS/all.min.css CSS/styles.comp.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 10 versions' CSS/output.css -o CSS/styles.prefix.css",
+    "Compress-css": "node-sass CSS/output.css CSS/styles.css --output-style compressed",
+    "Build-css": "npm-run-all compile-sass concat-sass Compress-css"
+  },
+  "author": "Amr Osama",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  },
+  "dependencies": {}
+}

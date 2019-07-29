@@ -1,0 +1,60 @@
+
+
+@mixin ClearFix 
+{
+    &::after
+    {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+}
+
+
+/* Media Queries */
+/* 0-->600px Phones only
+   600-->900px tablets (portait mode)
+   900-->1200  tablets (landscape Mode)
+   1200 --> 1800 Desktop Approach (which is already implemented)
+   1800 --> infinity (Big Screens)
+
+   */
+
+/* Argument-List */
+/*
+1- Phone (Max-widht:600px)
+2-Tablet-Portait(Max-width:900px)
+3-Tablet-Landscape(Max-width:1200px)
+4-BigDesktop (Max-width:1800px)
+*/
+
+
+// actually converting px to em is very useful in mediaqueries
+@mixin Responsive($breakpoint) 
+{
+    @if $breakpoint == Phone {
+        @media only Screen and (max-width:37.5em),
+        only Screen and (hover:none) { // 1em = 16px (600px)
+            @content;
+        }
+    }
+    @if $breakpoint == Tablet-Portait { //1em = 16px (900px)
+        @media only Screen and (max-width:56.25em),
+        only Screen and (hover:none) {
+            @content;
+        }
+    }
+    @if $breakpoint == Tablet-Landscape {//1em = 16px (1200px)
+        @media only Screen and (max-width:75em),
+        only Screen and (hover:none) {
+            @content;
+        }
+    }
+    @if $breakpoint == BigDesktop {//1em = 16px (1800px)
+        @media only Screen and (min-width:112.5em),
+        only Screen and (hover:none) {
+            @content;
+        }
+    }    
+}

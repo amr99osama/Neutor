@@ -1,0 +1,80 @@
+
+/* Animations */
+@-webkit-keyframes MoveInLeft {
+  0% {
+    -webkit-transform: translateX(-12rem);
+            transform: translateX(-12rem);
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+@keyframes MoveInLeft {
+  0% {
+    -webkit-transform: translateX(-12rem);
+            transform: translateX(-12rem);
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes MoveInRight {
+  0% {
+    -webkit-transform: translateX(12rem);
+            transform: translateX(12rem);
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes MoveInRight {
+  0% {
+    -webkit-transform: translateX(12rem);
+            transform: translateX(12rem);
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes MoveUp {
+  0% {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes MoveUp {
+  0% {
+    -webkit-transform: translateY(8rem);
+            transform: translateY(8rem);
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1; } }
+
+/* End of The Header */

@@ -1,0 +1,34 @@
+
+//Abstract for (Functions , Mixins , Variables)
+@import "Abstracts/Functions";
+@import "Abstracts/Mixins";
+@import "Abstracts/Variables";
+
+
+
+// Used For Base (default styles selectors)
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+
+//Componenets for (buutons , navs , imgs,---)
+@import "Components/buttons.scss";
+@import "Components/composition.scss";
+@import "Components/features-box.scss";
+@import "Components/card-box.scss";
+@import "Components/story.scss";
+@import "Components/bg-videos.scss";
+@import "Components/form.scss";
+@import "Components/popup.scss";
+
+// Layouts for (Float Design , grid Design , header , footer)
+@import "Layouts/header";
+@import "Layouts/grid";
+@import "Layouts/footer";
+@import "Layouts/navigation";
+
+// Pages for (Multiple Pages Designs)
+@import "Pages/Home.scss";
+
