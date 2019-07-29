@@ -353,7 +353,7 @@ body {
           -webkit-transform: scale(1.3);
           -ms-transform: scale(1.3);
           transform: scale(1.3);
-          z-index: 999; } }
+          z-index: 9; } }
     .composition__images--p3 {
       top: 10rem;
       left: 20%; }
@@ -955,7 +955,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  z-index: 100;
+  z-index: 1000;
   transition: all 0.5s ease-in-out; }
   @media only Screen and (max-width: 56.25em), only Screen and (hover: none) {
     .navigation__background {
